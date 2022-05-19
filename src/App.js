@@ -10,7 +10,7 @@ export const App = () => {
     <>
       <Header />
       <Input todoItems={todoItems} setTodoItems={setTodoItems} />
-      <List todoItems={todoItems} />
+      <List todoItems={todoItems} setTodoItems={setTodoItems} />
     </>
     );
 }

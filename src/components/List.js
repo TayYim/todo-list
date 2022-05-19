@@ -5,7 +5,9 @@ export const List = ({ todoItems, setTodoItems }) => {
 		event.preventDefault();
 		const orderOfItemToBeDeleted = parseInt(event.target.getAttribute("order"));
 		console.log(`The order of item to be delted in state is: ${orderOfItemToBeDeleted}`);
-		console.log("please delete me!");
+		const newTodoItems = [...todoItems];
+		newTodoItems.splice(orderOfItemToBeDeleted, 1); // remove item by index
+		setTodoItems(newTodoItems);
 	};
 
 	const list = todoItems.map((element, index) => 
