@@ -5,9 +5,14 @@ export const List = ({ todoItems, setTodoItems }) => {
 		event.preventDefault();
 		const orderOfItemToBeDeleted = parseInt(event.target.getAttribute("order"));
 		console.log(`The order of item to be delted in state is: ${orderOfItemToBeDeleted}`);
+<<<<<<< HEAD
 		console.log(orderOfItemToBeDeleted)
 		const newTodoItems = todoItems.filter((x,i)=>orderOfItemToBeDeleted !== i)
 		console.log(newTodoItems)
+=======
+		const newTodoItems = [...todoItems];
+		newTodoItems.splice(orderOfItemToBeDeleted, 1); // remove item by index
+>>>>>>> add remove
 		setTodoItems(newTodoItems);
 	};
 
