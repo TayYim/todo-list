@@ -8,17 +8,14 @@ export const App = () => {
 
   return (
     <>
-<<<<<<< HEAD
         <div class="container">
           <Header />
           <Input todoItems={todoItems} setTodoItems={setTodoItems} />
           <List todoItems={todoItems} setTodoItems={setTodoItems} />
         </div>
-=======
       <Header />
       <Input todoItems={todoItems} setTodoItems={setTodoItems} />
       <List todoItems={todoItems} setTodoItems={setTodoItems} />
->>>>>>> add remove
     </>
     );
 }

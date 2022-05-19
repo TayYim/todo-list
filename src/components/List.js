@@ -17,10 +17,19 @@ export const List = ({ todoItems, setTodoItems }) => {
 	};
 
 	const list = todoItems.map((element, index) => 
+<<<<<<< HEAD
 		<li class="list-item" key={index}>
 			<button class="delete-button" order={index} onClick={handleDeleteItem}>x</button>
 			{element}
 		</li>);
 
 	return <ul class="list-wrap">{list}</ul>;
+=======
+		<li className='list-item' key={index}>
+			{element}
+			<button className='delete-button' order={index} onClick={handleDeleteItem}>x</button>
+		</li>);
+
+	return <ul className='list-wrap'>{list}</ul>;
+>>>>>>> add className
 };
