@@ -11,5 +11,5 @@ export const Input = ({ todoItems, setTodoItems }) => {
 		}
 	};
 
-	return <input type="text" onKeyDown={handleKeyDown}/>
+	return <input placeholder='Please enter todo...' type="text" onKeyDown={handleKeyDown}/>
 };

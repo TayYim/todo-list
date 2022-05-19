@@ -6,24 +6,23 @@
     margin: 10px auto;
     background-image: linear-gradient(
       to left,
-      rgba(232, 233, 235, 0) 0%,
-      rgba(156, 188, 195, 0.213) 10%,
-      rgba(72, 115, 147, 0.6) 40%,
-      rgba(98, 125, 137, 0.8) 60%,
+      rgba(189, 117, 182, 0.213) 10%,
       rgba(77, 132, 132, 0.432) 100%);
   }
   
   .list-wrap {
-    width: 50%;
+    width: 40%;
     margin: 10px auto;
     list-style-type: square;
   }
   
   .delete-button {
-    margin-left: 10px;
+    margin-right: 10px;
   } 
   
   .list-item {
     margin-top: 10px;
+    list-style-type: None;
+    background-color: rgba(232, 233, 222, 0.213);
   }
   
