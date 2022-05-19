@@ -32,6 +32,12 @@ const doubledItems = items.map(x => x * 2);
 ```
 ## How to start your application
 
+Install dependencies:
+
+```
+npm i
+```
+
 In the project directory, you can run:
 
 ### `npm start`
