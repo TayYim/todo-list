@@ -5,14 +5,17 @@ export const List = ({ todoItems, setTodoItems }) => {
 		event.preventDefault();
 		const orderOfItemToBeDeleted = parseInt(event.target.getAttribute("order"));
 		console.log(`The order of item to be delted in state is: ${orderOfItemToBeDeleted}`);
-		console.log("please delete me!");
+		console.log(orderOfItemToBeDeleted)
+		const newTodoItems = todoItems.filter((x,i)=>orderOfItemToBeDeleted !== i)
+		console.log(newTodoItems)
+		setTodoItems(newTodoItems);
 	};
 
 	const list = todoItems.map((element, index) => 
-		<li key={index}>
+		<li class="list-item" key={index}>
+			<button class="delete-button" order={index} onClick={handleDeleteItem}>x</button>
 			{element}
-			<button order={index} onClick={handleDeleteItem}>x</button>
 		</li>);
 
-	return <ul>{list}</ul>;
+	return <ul class="list-wrap">{list}</ul>;
 };
