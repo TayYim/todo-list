@@ -11,10 +11,10 @@ export const List = ({ todoItems, setTodoItems }) => {
 	};
 
 	const list = todoItems.map((element, index) => 
-		<li key={index}>
+		<li className='list-item' key={index}>
 			{element}
-			<button order={index} onClick={handleDeleteItem}>x</button>
+			<button className='delete-button' order={index} onClick={handleDeleteItem}>x</button>
 		</li>);
 
-	return <ul>{list}</ul>;
+	return <ul className='list-wrap'>{list}</ul>;
 };

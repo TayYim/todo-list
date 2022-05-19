@@ -8,9 +8,11 @@ export const App = () => {
 
   return (
     <>
+      <div className='container'>
       <Header />
       <Input todoItems={todoItems} setTodoItems={setTodoItems} />
       <List todoItems={todoItems} setTodoItems={setTodoItems} />
+      </div>
     </>
     );
 }
