@@ -1,3 +1,9 @@
+# About
+
+Homework of
+- 严宋扬 3120105333
+- 贺浩庭 3121358060
+
 ## Useful Docs
 [vscode installation guide for mac/windows](https://www.runoob.com/w3cnote/vscode-tutorial.html	)
 
