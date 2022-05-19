@@ -26,8 +26,8 @@ export const List = ({ todoItems, setTodoItems }) => {
 	return <ul class="list-wrap">{list}</ul>;
 =======
 		<li className='list-item' key={index}>
-			{element}
 			<button className='delete-button' order={index} onClick={handleDeleteItem}>x</button>
+			{element}
 		</li>);
 
 	return <ul className='list-wrap'>{list}</ul>;
