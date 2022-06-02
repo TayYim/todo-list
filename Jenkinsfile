@@ -10,6 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'This is a build'
+                sh 'cnpm i'
                 sh 'npm run build'
             }
         }
