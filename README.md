@@ -1,3 +1,12 @@
+# Jenkins Homework
+
+严宋扬 贺浩庭
+
+运行截图：
+![screenshot](./screenshot.png)
+具体过程：
+![BlueOcean](./BO.png)
+
 # About
 
 
